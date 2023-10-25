@@ -1,0 +1,2 @@
+HTML - Linguagem de marcação - exibir conteúdos
+JS - Linguagem de interação.

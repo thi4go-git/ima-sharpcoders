@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo ima</title>
+    <!--  <script src="./index.js" defer></script>   -->
+    <script>
+
+        //Aqui dentro já vai o Java Script e tbm HTML
+        //usar no beecrowd  document.write 
+        const nome = 'Judas';
+        let confirmNome = confirm(`Confirma o nome ${nome} ?`);
+        document.write(`Nome: ${nome}`);// msg via Body
+        alert('Confirmado: ' + confirmNome)// msg via Alerta no navegador
+
+        console.log("teste");//msgno console do navegador
+
+        let nomeP = prompt("Digite o nome:")// Abre caixa de diálogo
+        document.write(`Nome: ${nomeP}`);// msg via Body
+
+        //Conversão:
+        let numNumInt = parseInt(prompt("Digite o nº inteiro"));
+        console.log(numNumInt);
+
+        const numNumFloat = parseFloat(prompt("Digite o nº Real"));
+        console.log(numNumFloat);
+
+
+        //Ternário
+        let confirma = 1 == 0 ? 'sim' : 'não';
+        console.log(confirma);
+
+
+        //---
+        console.log('123'.toString());
+        console.log('jUdAsc'.toUpperCase());
+
+        const tes = 50.78925121;
+        console.log(tes.toFixed(2));// 2 casas decimais
+
+
+        //Split
+        let nomes = 'nome1 nome2';
+        let nomeSeparado = nomes.split(" ");
+
+        console.log(nomeSeparado[0] + ' <-> ' + nomeSeparado[1]);
+
+
+
+    </script>
+    <!-- 'defer' faz com que o JavaScript seja executado após o carregamento completo do HTML -->
+</head>
+
+<body>
+    <!-- (FRONT) O JAvaScript será executado ao abrir o index.html -->
+    <!-- (BACK) Para executar o index.js no backend, basta navegar até a raiz do projeto e digitar o comando: "node index.js" -->
+</body>
+
+</html>
