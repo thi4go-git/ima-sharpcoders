@@ -8,6 +8,21 @@
     <!--  <script src="./index.js" defer></script>   -->
     <script>
 
+
+        var valorTotal = 0.0;
+
+        for (let index = 1; index <= 2; index++) {
+            let codigoPeca = parseInt(prompt("Código " + index + ":"));
+            let qtdePecas = parseInt(prompt("QTDE " + index + ":"));
+            let vlrUnitario = parseFloat(prompt("UN " + index + ":"));
+             valorTotal += (qtdePecas * vlrUnitario);
+            if (index == 2) {
+                console.log("TOTAL " + valorTotal);
+            }
+        }
+     
+
+
         //Aqui dentro já vai o Java Script e tbm HTML
         //usar no beecrowd  document.write 
         const nome = 'Judas';
