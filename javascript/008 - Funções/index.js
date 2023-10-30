@@ -1,6 +1,6 @@
 //-------------------------------------------- Funções
-//Basic
-console.log('-----------------------------Basic');
+//Basic / Convencionais
+console.log('-----------------------------Basic / Convencionais');
 function devesomar(valor1, valor2) {
     // Como o JS ñ é tipado, devemos verificar se os valores recebidos foram === Number  
     if (typeof valor1 === 'number' && typeof valor2 === 'number') {
@@ -14,7 +14,7 @@ console.log(devesomar(15, "20"));
 console.log();
 
 
-console.log('--------------------------- FunctionArrow ');
+console.log('--------------------------- FunctionArrow / Arrow Functions ');
 //FuncArrow retorno
 const nomeFuncArrow = () => {
     return "teste nomeFuncArrow()";

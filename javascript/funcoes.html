@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function mensagem() {
+            alert("Teste");
+        }
+
+        function selecionaValor(valor) {
+            alert(valor);
+        }
+
+        function eventoKey(valor) {
+            popularH1(valor);
+            alert(valor);
+        }
+
+        function popularH1(valor) {
+            document.getElementsByTagName('h1')[0].innerText = valor; // Pega 1ª tag H1
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    <!-- onclick -->
+    <button onclick="mensagem()">
+        Teste onclick
+    </button>
+
+    <!-- Combobox -->
+    <select name="selecao" id="selecao" onchange="selecionaValor(this.value)">
+        <option value="0">Escolha uma opção:</option>
+        <option value="1">HTML</option>
+        <option value="2">CSS</option>
+        <option value="3">JavaScript</option>
+    </select>
+
+    <br />
+    <input type="text" onkeyup="eventoKey(this.value)">
+
+    <br />
+    <h1></h1>
+
+
+</body>
+
+</html>
