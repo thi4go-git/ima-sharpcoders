@@ -9,20 +9,6 @@
     <script>
 
 
-        var valorTotal = 0.0;
-
-        for (let index = 1; index <= 2; index++) {
-            let codigoPeca = parseInt(prompt("Código " + index + ":"));
-            let qtdePecas = parseInt(prompt("QTDE " + index + ":"));
-            let vlrUnitario = parseFloat(prompt("UN " + index + ":"));
-             valorTotal += (qtdePecas * vlrUnitario);
-            if (index == 2) {
-                console.log("TOTAL " + valorTotal);
-            }
-        }
-     
-
-
         //Aqui dentro já vai o Java Script e tbm HTML
         //usar no beecrowd  document.write 
         const nome = 'Judas';
@@ -66,6 +52,65 @@
         // Ler variáveis no Beecrowd semelhante ao prompt: lines.shift()
         // exemplo:
         // let valor = parseInt(lines.shift());
+
+
+
+        //-------------------------Vetores  -------------------------------------------
+        let vetor = ['Judas', 'cabelo', 'ovo'];
+        for (let index = 0; index < vetor.length; index++) {
+            console.log(vetor[index]);
+        }
+
+        //add valor no vetor
+        vetor.push('novo');
+
+        //forEach
+        vetor.forEach(function (element) {
+            console.log(element);
+        });
+
+
+        //remover valor vetor:
+        //removendo todos os dados a partir de um index:
+        vetor.splice(2);
+
+        //removendo registros a partir do index e informando quantos registros serão deletados a partir do index:
+        vetor.splice(2, 1);
+
+
+        //--------------------------Matrizes--------------------------
+        let matriz = [
+            ['Judas', 35, "Goiás"],
+            ['Saulo', 10, "Sao paulo"],
+            ['Pelé', 50, "Santos"],
+            ['Ricardo', 20, "BH"],
+        ]
+
+        // imprime em formato de tabela
+        console.table(matriz);
+
+        //imprimir linha passando a posição da linha
+        console.log(matriz[2]);
+
+        //imprimindo uma linha e a 1ª Coluna dessa linha
+        console.log(matriz[2][0]);
+
+        //----------- Laço de repetição Matriz
+        console.log();
+        //percorrer linha
+        for (let linha = 0; linha < matriz.length; linha++) {
+            console.log(matriz[linha]);
+        }
+
+        console.log();
+        //percorrer linhas e Colunas
+        for (let linha = 0; linha < matriz.length; linha++) {
+            for (let coluna = 0; coluna < matriz[0].length; coluna++) {
+                console.log(matriz[linha][coluna]);
+            }
+            console.log();
+        }
+
 
 
     </script>

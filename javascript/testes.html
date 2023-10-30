@@ -7,17 +7,12 @@
     <title>Document</title>
     <script>
 
-        var valorTotal = 0.0;
+        let a = 7;
+        let b = 200;
 
-        for (let index = 1; index <= 2; index++) {
-            let codigoPeca = parseInt(prompt("Código " + index + ":"));
-            let qtdePecas = parseInt(prompt("QTDE " + index + ":"));
-            let vlrUnitario = parseFloat(prompt("UN " + index + ":"));
-            valorTotal += (qtdePecas * vlrUnitario);
-            if (index == 2) {
-                console.log("TOTAL " + valorTotal);
-            }
-        }
+        let maior = (a + b + Math.abs(a - b)) / 2
+
+        console.log('maior ' + maior);
 
 
     </script>
