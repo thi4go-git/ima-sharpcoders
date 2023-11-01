@@ -17,38 +17,4 @@ comentário
 // let valor = parseInt(lines.shift());
 //para ler mas de 1 valor de 1 linha ex: 3.0 4.0 5.2
 // let linha = lines.shift().split(" ")
-//  linha[0] -> 3.0 linha[1] -> 4.0  linha[2] -> 5.2
-
-let N = 4;
-
-let X = [];
-
-X.push(14, 123, 10, -25);
-
-let dentroIntervalo = 0;
-let foraIntervalo = 0;
-
-for (let index = 0; index < N; index++) {
-    if (X[index] >= 10 && X[index] <= 20) {
-        dentroIntervalo++;
-    } else {
-        foraIntervalo++;
-    }
-}
-
-console.log(dentroIntervalo + " in");
-console.log(foraIntervalo + " out");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//  linha[0] -> 3.0 linha[1] -> 4.0  linha[2] -> 5.2 
