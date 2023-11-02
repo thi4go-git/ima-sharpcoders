@@ -18,3 +18,4 @@ comentário
 //para ler mas de 1 valor de 1 linha ex: 3.0 4.0 5.2
 // let linha = lines.shift().split(" ")
 //  linha[0] -> 3.0 linha[1] -> 4.0  linha[2] -> 5.2 
+
