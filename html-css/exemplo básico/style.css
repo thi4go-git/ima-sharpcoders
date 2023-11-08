@@ -77,3 +77,56 @@ header a:hover {
     margin-left: 25px;
     margin-top: 20px;
 }
+
+
+/* Estilização da sessão sobre */
+.sobre {
+
+    /* Tamanho */
+    width: 1200px;
+
+    /* centralizar elementos */
+    margin: 80px auto;
+
+    /* Eusando o overflow pois usaremos Float nessa raiz da class Sobre */
+    overflow: auto;
+}
+
+.sobre img {
+    float: left;
+}
+
+.sobre div {
+    /* Flutuará na esquerda. Se não colocar o width ele não funciona. */
+    float: right;
+    width: 730px;
+
+}
+
+.sobre h1 {
+    font-size: 70px;
+}
+
+.sobre p {
+    margin-top: 10px;
+
+    /* O texto ocupará do início ao final do componente */
+    text-align: justify;
+
+    line-height: 25px;
+
+    /* Espaçamento parágrafo */
+    text-indent: 20px;
+}
+
+/* Estilização RODAPÉ */
+footer {
+    background-color: black;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 30px;
+    color: aliceblue;
+    text-align: center;
+}
