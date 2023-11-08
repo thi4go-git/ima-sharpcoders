@@ -1,0 +1,61 @@
+/* Estilização Global - Seletor Global */
+* {
+    /* margin=(da borda para fora, espaço externo) Remove a margem automatica do HTML geral poisestá no seletor geral */
+    margin: 0;
+
+    /* padding=(da borda para dentro, espaço interno) */
+    padding: 0;
+
+    /* Padroniza a fonte para o HTML */
+    font: 14px arial;
+}
+
+
+/* TOPO da página */
+/* seletor de TAG */
+header {
+    background-color: rgb(180, 182, 182);
+
+    /*Dentro de sse header temos 2 coisas flutuando: imagem e o nav, dessa forma, o background sumirá 
+    pois como os elementos estão flutuando ele não saberá o tamanho/altura. Para corrigir isso usaremos o overflow; */
+    overflow: auto;
+}
+
+/* seletor de TAG */
+header img {
+    /* faz a imagem do header flutuar a esquerda. */
+    float: left;
+
+    /* margin=(da borda para fora, espaço externo) */
+    margin: 15px;
+}
+
+header nav {
+    /* faz o menu NAV flutuar a direita */
+    float: right;
+}
+
+header a {
+    /* Cor dos elementos com tag A do NAV (menu) */
+    color: aliceblue;
+
+    /* Como a tag a é link ela é sublinhada, para retirar usamos o comando abaixo */
+    text-decoration: none;
+
+    /* Por default a tag A tem o display inline, dessa forma o margin-top não funcionará. 
+    Para contornar isso usaremos o display inline block e chamaremos o margin-top */
+    display: inline-block;
+
+    margin-right: 15px;
+    margin-top: 25px;
+
+}
+
+/* Pseudo classe */
+header a:hover {
+    /* hover: ação que ocorrerá ao passar o mouse em cima do link com a tag A no header.
+    Nesse caso ele adicionará sublinhado ao passar o mouse */
+    text-decoration: underline;
+    /* cor ao passar o mouse */
+    color: blue;
+}
