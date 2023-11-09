@@ -1,0 +1,27 @@
+main {
+    width: 800px;
+    height: 400px;
+    background-color: rgb(212, 212, 228);
+
+    /* O display flex faz com que os elementos que estão nessa raiz (tag MAIN) fiquem 
+    um do lado do outro nesse caso os elementos dentro do main são as DIVs*/
+    display: flex;
+
+    /* Para ordenar os elementos podemos usar o flex direction,
+    por exemplo   flex-direction: row alinha da esquerda para a direita horizontalmente */
+    flex-direction: row;
+
+    /* Alinha os elementos no meio:   justify-content: center
+    Alinha na esquerda : justify-content: left.
+    Para alinha e separar os objetos:   justify-content: space-around */
+    justify-content: space-around;
+
+    /* Para centralizar os elementos  */
+    align-items: center;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(37, 105, 28);
+}

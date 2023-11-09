@@ -1,0 +1,70 @@
+/* 
+Por padrão um GRID tem 12 colunas, aqui iremos definir os tamanhos de colunas. 
+Como o tamanho máximo é 100% e a qtde das colunas = 12
+o tamanho de cada coluna é (100px / 12) = 8,33 px
+*/
+
+/* 
+Padronizar seletor de classe que começa com o nome 'col-'
+Nesse exemplo ele adicionara no seletor de classe o código abaixo além do código
+existente no próprio seletor
+ */
+[class*="col-"] {
+    border: 1px solid black;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+/* Seletores de classe para padronizar o tamanho das colunas */
+.col-1 {
+    width: 8.33%;
+    background-color: aquamarine;
+}
+
+.col-2 {
+    width: 16.66%;
+    background-color: rgb(155, 160, 158);
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}

@@ -1,0 +1,23 @@
+/* 
+O BOX Sizing serve para padronizar altura e largura para que os 
+elementos não estourem o valor definido.
+
+Nesse exemplo Queremos trabalhar com uma div de 300 px de largura x altura:
+Nesse exemplo definimos a largura com 300px porém se somarmos com o 
+5px da Borda temos um valor maior do que necessitamos.
+Para isso usaremos o BOX SIZING.
+*/
+
+div {
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    border: 5px solid black;
+    padding: 10px;
+
+
+    /* Obriga o elemento a ter exatamente 300px e não acrescentará ao tamanho
+    se usar border/padding e etc...
+    A soma de width + padding + border será exatamente 300px conforme definido. */
+    box-sizing: border-box;
+}
