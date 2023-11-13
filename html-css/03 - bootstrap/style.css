@@ -1,0 +1,19 @@
+body {
+    background-color: antiquewhite;
+}
+
+form {
+    width: 50%;
+    margin: 5 auto;
+    
+    /* Centralizando na Horizontal */
+    margin: 0 auto;
+
+    margin-top: 40px;
+}
+
+input,
+select,
+textarea {
+    margin-bottom: 10px;
+}
