@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //por padrão ele executa o GET
+        fetch("http://localhost:3000/clientes")
+            .then(requisicao => console.log(requisicao.json()))
+            .then(clientes => console.table(clientes))
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
